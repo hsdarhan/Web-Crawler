@@ -61,14 +61,12 @@ class crawler:
         file.close()
         break
 
-
   def run():
 
     if(not crawler.folder_exists(folder_name)):
       crawler.create_folder(folder_name)
     crawler.get_info(crawler.create_file_name())
     print ('Data Export Successful!')
-
 
 if __name__ == "__main__":
   crawler.run();
